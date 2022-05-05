@@ -1,13 +1,12 @@
+import React from "react";
+import { TouchableOpacity } from "react-native";
 
-import React from 'react';
-import { View } from 'react-native';
-
-import { styles } from './styles';
+import { styles } from "./styles";
 
 export function Widget() {
   return (
-    <View style={styles.container}>
-        
-    </View>
+    <>
+      <TouchableOpacity></TouchableOpacity>
+    </>
   );
 }
