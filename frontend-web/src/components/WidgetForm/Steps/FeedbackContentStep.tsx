@@ -80,7 +80,7 @@ export function FeedbackContentStep({
               focus:outline-none focus:ring-2 focus:ring-offset-2
               focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors
               disabled:opacity-50 disabled:hover:bg-brand-500"
-            disabled={comment.length === 0}
+            disabled={(comment.length === 0) || isSendingFeedback }
           >
             {isSendingFeedback ? <Loading /> : <p>Enviar Feedback</p>}
           </button>
